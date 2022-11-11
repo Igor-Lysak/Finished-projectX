@@ -270,6 +270,7 @@ article:nth-child(even) {
   font-size: 18px;
   line-height: 22px;
   color: #fbd784;
+  text-decoration: none;
 }
 
 .article-read-more::before {
@@ -403,9 +404,11 @@ footer {
     width: 420px;
     height: 554px;
   }
-  .article-read-more::before {
-    left: 110px;
+
+  .article-read-more::before{
+    left: 80px;
   }
+
   .article {
     gap: 100px;
   }
@@ -621,7 +624,12 @@ footer {
 @media (max-width: 700px) {
   .account {
     position: absolute;
-    left: 230px;
+    left: 350px;
+  }
+
+  .article-read-more::before{
+    top: 0px;
+    left: 60px;
   }
 
   label {
@@ -796,6 +804,10 @@ footer {
     margin-top: 155px;
     width: 250px;
     height: 400px;
+  }
+
+  .account{
+    left: 300px;
   }
 }
 
